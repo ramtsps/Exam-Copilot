@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="Exam Copilot - Your learning companion">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="exam_copilot">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>Exam Copilot</title>
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  
+  <script>
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBqSX8oTodeSCIbPBGLRxCKXBELB9vjCOI",
+      authDomain: "exam-copilot-47242.firebaseapp.com",
+      projectId: "exam-copilot-47242",
+      storageBucket: "exam-copilot-47242.firebasestorage.app",
+      messagingSenderId: "460367931489",
+      appId: "1:460367931489:web:5356f51079496f3ea5e220",
+      measurementId: "G-B5NT93X8P6"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+</head>
+<body>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js?v=1777567009');
+      });
+    }
+  </script>
+  
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
